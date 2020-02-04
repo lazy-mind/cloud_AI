@@ -1,0 +1,112 @@
+% style setup
+% -----------------------------------------------------------------------
+\documentclass[10pt,landscape]{article}
+\usepackage{amssymb,amsmath,amsthm,amsfonts}
+\usepackage{multicol,multirow}
+\usepackage{calc}
+\usepackage{ifthen}
+\usepackage[landscape]{geometry}
+\usepackage[colorlinks=true,citecolor=blue,linkcolor=blue]{hyperref}
+\usepackage{graphicx}
+\usepackage{cases}
+\graphicspath{ {./images/} }
+
+
+\ifthenelse{\lengthtest { \paperwidth = 11in}}
+    { \geometry{top=.5in,left=.5in,right=.5in,bottom=.5in} }
+	{\ifthenelse{ \lengthtest{ \paperwidth = 297mm}}
+		{\geometry{top=1cm,left=1cm,right=1cm,bottom=1cm} }
+		{\geometry{top=1cm,left=1cm,right=1cm,bottom=1cm} }
+	}
+\pagestyle{empty}
+\makeatletter
+\renewcommand{\section}{\@startsection{section}{1}{0mm}%
+                                {-1ex plus -.5ex minus -.2ex}%
+                                {0.5ex plus .2ex}%x
+                                {\normalfont\large\bfseries}}
+\renewcommand{\subsection}{\@startsection{subsection}{2}{0mm}%
+                                {-1explus -.5ex minus -.2ex}%
+                                {0.5ex plus .2ex}%
+                                {\normalfont\normalsize\bfseries}}
+\renewcommand{\subsubsection}{\@startsection{subsubsection}{3}{0mm}%
+                                {-1ex plus -.5ex minus -.2ex}%
+                                {1ex plus .2ex}%
+                                {\normalfont\small\bfseries}}
+\makeatother
+\setcounter{secnumdepth}{0}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt plus 0.5ex}
+% -----------------------------------------------------------------------
+% -----------------------------------------------------------------------
+% -----------------------------------------------------------------------
+
+\title{Quick Guide to LaTeX}
+
+\begin{document}
+
+\footnotesize
+
+% -----------------------------------------------------------------------
+% -----------------------------------------------------------------------
+% -----------------------------------------------------------------------
+
+\newpage
+\begin{center}
+     \Large{\textbf{AI in the cloud with AWS}} \\
+\end{center}
+
+
+\begin{multicols}{2}
+\setlength{\premulticols}{1pt}
+\setlength{\postmulticols}{1pt}
+\setlength{\multicolsep}{1pt}
+\setlength{\columnsep}{2pt}
+
+
+%\includegraphics[width=130mm, scale = 1]{Resume-PDF/Resume}
+
+%\columnbreak
+
+\subsection{\color{blue} Related Link:}
+\begin{itemize}
+	\item \href{https://www.sciencedirect.com/science/article/pii/S240591881730048X}{\color{black}AWS account setting}
+\end{itemize}
+
+\subsection{\color{blue} Tutorial}
+\begin{itemize}
+	\item \href{https://blog.datahut.co/scraping-yahoo-finance-data-using-python/}{\color{black}Tutorial 1}
+\end{itemize}
+
+\end{multicols}
+
+
+
+
+
+\newpage
+\begin{center}
+     \Large{\textbf{Data Management}} \\
+\end{center}
+
+
+\begin{multicols}{2}
+\setlength{\premulticols}{1pt}
+\setlength{\postmulticols}{1pt}
+\setlength{\multicolsep}{1pt}
+\setlength{\columnsep}{2pt}
+
+\subsection{\color{blue} Storing data in the cloud}
+\begin{itemize}
+	\item S3 object
+\end{itemize}
+
+\end{multicols}
+
+
+
+
+
+% style end
+% -----------------------------------------------------------------------
+\end{document}
+% -----------------------------------------------------------------------
